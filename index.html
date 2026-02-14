@@ -169,10 +169,18 @@
         }
 
         .equation {
-            margin-top: 5px;
-            color: rgba(255,255,255,0.4);
-            font-size: 0.85rem;
-            font-family: 'Courier New', monospace;
+            margin-top: 15px;
+            color: #ffcccc;
+            font-size: 1.25rem;
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px rgba(255, 50, 50, 0.6);
+            opacity: 0.9;
+        }
+
+        .equation i {
+            font-style: italic;
+            font-weight: bold;
         }
 
         @media (max-height: 600px) {
@@ -180,6 +188,7 @@
             h1 { font-size: 1.8rem; }
             .controls { padding: 10px 20px; margin-bottom: 15px; }
             .value { font-size: 1.2rem; }
+            .equation { font-size: 1rem; }
         }
     </style>
 </head>
@@ -204,7 +213,7 @@
         </div>
         
         <div class="equation">
-            y = x<sup>2/3</sup> + 0.9 sin(kx) &radic;(3 - x<sup>2</sup>)
+            <i>y</i> = <i>x</i><sup>2/3</sup> + 0.9 sin(<i>kx</i>) <span style="font-style: normal;">&radic;</span>(3 - <i>x</i><sup>2</sup>)
         </div>
     </div>
 
